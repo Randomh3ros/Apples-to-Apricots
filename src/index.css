@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Orbitron:wght@700;900&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+  .text-neon-glow {
+    text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 15px #f00, 0 0 20px #f00;
+  }
+  .text-3d-shadow {
+    text-shadow: 2px 2px 0px #000, 4px 4px 0px #000, 6px 6px 0px #000, 8px 8px 0px #000; /* Black 3D popping shadow */
+  }
+  .text-red-purple-outline {
+    color: #ff0000; /* Red text */
+    text-shadow: 
+      -1px -1px 0 #800080,  
+      1px -1px 0 #800080,
+      -1px 1px 0 #800080,
+      1px 1px 0 #800080, /* Thin purple outline */
+      2px 2px 0px #000, 4px 4px 0px #000; /* Subtle black 3D popping shadow for contrast */
+  }
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes card-float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Remix: Apples to Apricots",
+  "description": "A fun card game where players match prompt cards with hilarious answer cards, featuring customizable languages and themed decks.",
+  "requestFramePermissions": ["geolocation"]
+}
